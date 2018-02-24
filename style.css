@@ -22,7 +22,7 @@ body {
     height: 100vh;
     overflow: auto;
     z-index: 99;
-    background: rgba(254,254,254, 1.0); /* to apply opacity background only. */
+    background: #094004; /* to apply opacity background only. */
     visibility: hidden;
 }
 
@@ -60,7 +60,7 @@ body {
     position: absolute;
     right: 0px;
     top: 0px;
-    background-color: white;
+    background-color: #094004;
     width: 30vw;
     min-width: 300px;
     z-index: 100;
