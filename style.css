@@ -24,6 +24,7 @@ body {
     z-index: 99;
     background: #094004; /* to apply opacity background only. */
     visibility: hidden;
+    
 }
 
 #contents {
@@ -71,6 +72,7 @@ body {
 
 h3 {
     margin-bottom: 0px;
+
 }
 
 .chapter-container {

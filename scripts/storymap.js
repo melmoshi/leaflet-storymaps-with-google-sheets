@@ -71,12 +71,18 @@ $(window).on('load', function() {
   /**
    * Loads the basemap and adds it to the map
    */
-  function addBaseMap() {
-    var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
-    L.tileLayer.provider(basemap, {
-      maxZoom: 18
-    }).addTo(map);
+    
+    function addBaseMap() {
+    L.tileLayer('https://api.mapbox.com/styles/v1/melaniemoshi/cje6lfacx3l2c2rmrxw2nk3md/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWVsYW5pZW1vc2hpIiwiYSI6ImNqY2ZlYzhpZjE2ZHAzMnQ5YW1yODNkZmMifQ.JyPloAWwjfxjHLEvRUOv9A', {foo: 'bar'}).addTo(map);
   }
+    
+    
+//  function addBaseMap() {
+//    var basemap = trySetting('_tileProvider', 'Stamen.TonerLite');
+//    L.tileLayer.provider(basemap, {
+//      maxZoom: 18
+//    }).addTo(map);
+//  }
 
   function initMap() {
     var options = mapData.sheets(constants.optionsSheetName).elements;
